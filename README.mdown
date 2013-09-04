@@ -1,0 +1,6 @@
+Inventory
+=========
+
+A simple application for tracking team inventory.
+
+For more detail, view the test/features directory
