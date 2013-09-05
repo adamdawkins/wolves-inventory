@@ -4,12 +4,13 @@ Feature: Add inventory items to system
   so that I can track the team inventory.
 
   * I should be able to add the following information:
+    - a description of the item
     - size
     - quantity
     - a label for unique identification
     - purchase date
   * I should be able to select an item type
-  * I should be able to tag an item with a squad.
+  * I should be able to associate an item with a squad.
   * 'Contact Kit' items should not have a quantity over 1 - we want to track each one
     individually, because they are expensive
 
