@@ -18,7 +18,19 @@ class SessionsControllerTest < ActionController::TestCase
       end
 
       describe "with correct credentials" do
+        before do
+          user = FactoryGirl.create :user
+          post :create, username: user.username, password: user.password
+        end
 
+        it "redirects to the root path" do
+          assert_redirected_to root_path
+        end
+        
+        it "creates a user_id in the session" do
+          pending
+          (session[:user_id]).wont_equal nil
+        end
 
       end 
     end

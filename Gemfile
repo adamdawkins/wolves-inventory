@@ -53,4 +53,5 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'turn'
+  gem "factory_girl_rails", "~> 4.0", require: false
 end

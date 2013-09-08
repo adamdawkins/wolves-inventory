@@ -3,6 +3,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/spec'
 require 'capybara/rails'
+require 'factory_girl'
 require 'turn/autorun'
 
 class ActiveSupport::TestCase
@@ -30,3 +31,5 @@ class ActionDispatch::IntegrationTest
   include Rails.application.routes.url_helpers
   include Capybara::DSL
 end
+
+FactoryGirl.find_definitions
