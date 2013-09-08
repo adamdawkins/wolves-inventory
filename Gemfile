@@ -43,3 +43,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+  gem 'minitest', '~> 4.7'
+  gem 'cucumber-rails', require: false
+end
